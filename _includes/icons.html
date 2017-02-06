@@ -1,0 +1,54 @@
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/static/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/static/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="/static/icons/safari-pinned-tab.svg" color="#191d1f">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="/static/icons/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="R Weekly Blog -  Updates and News about R Weekly" href="/feed.xml">
+
+  <style type="text/css">
+    {% capture include_to_scssify %}
+    
+    {% include style.scss %}
+    
+    {% endcapture %}
+    
+    {{ include_to_scssify | scssify }}
+  </style>
+
+  {% seo %}
+
+  <meta property="og:image" content="https://rweekly.org/public/facebook.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="R Weekly Blog - {{ page.title }}" /> {% if page.title == "Home" %}
+  <meta name="twitter:description" content="Weekly News in R Community" /> {% else %}
+  <meta name="twitter:description" content="{{ page.description }}" /> {% endif %}
+  <meta name="twitter:image" content="https://blog.rweekly.org/static/icons/logo-512x512.png" />
+
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking', true]);
+    _paq.push(['enableHeartBeatTimer']);
+    _paq.push(['trackAllContentImpressions']);
+    (function () {
+      var u = "//web.rweekly.org/";
+      _paq.push(['setTrackerUrl', u + 'js/index.php']);
+      _paq.push(['setSiteId', '13']);
+      var d = document,
+        g = d.createElement('script'),
+        s = d.getElementsByTagName('script')[0];
+      g.type = 'text/javascript';
+      g.async = true;
+      g.defer = true;
+      g.src = u + 'js/index.php';
+      s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <noscript>
+    <p><img src="//web.rweekly.org/js/index.php?idsite=13" style="border:0;" alt="" /></p>
+  </noscript>
+
+  <link rel="dns-prefetch" href="//github.com">
+  <link rel="dns-prefetch" href="//rweekly.org">

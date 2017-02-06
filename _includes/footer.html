@@ -1,0 +1,47 @@
+<footer>
+  <p>
+  <a href="https://blog.rweekly.org/atom.xml"  target="_blank">Feed</a> &nbsp; <a href="https://rweekly.org/about.html"  target="_blank">About</a></p>
+  <p><strong>R Weekly</strong> is openly developed on <a href="https://github.com/rweekly/rweekly.org"  target="_blank">GitHub</a>. </p>
+</footer>
+
+
+<script src="/static/jq.min.js"></script>
+<script>
+console.log(`%c               ..     .                 
+            .?????.+++++                
+        ?8.  .???   +++.  ~+.           
+       . .. ..... ... .. +.. .          
+      ?... .+.. . 88  ...?......        
+      .?. .+++=.      ..???. .++        
+       .   +~+,         ..?.  +,        
+         ...  ,              8. .       
+        ??II..,          .:88888        
+        .III  ,            .888.        
+        ?..I  ,         +  .....        
+        +. ...$     ... ...++ .         
+        +++..8$.,  ????. .++++.         
+       .++.  8O8O  .?,?.  ++=.          
+         .. .+.           I             
+        +...+++...:==~...I.             
+       .+. .+++. ,.===. .II.            
+       .+  .+.~    ..= ..I.7            
+          =+  ,        +,    .7.        
+       ..????.,       .+++..7777        
+         ???? ,        ..+  .777        
+        ..... ,          .  .. .        
+        +.. ..             :+....=      
+        .,...               .+...       
+
+Join us! https://rweekly.org/about.html `, "font-family:monospace")
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    }
+</script>
+
