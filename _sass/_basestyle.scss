@@ -392,6 +392,20 @@ article .content .rating {
   }
 }
 
+@media only screen and (min-width: 980px) {
+  .home-inner{
+    padding-left: 3%;
+    margin-left: 3%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .home-inner{
+    padding-left: 8%;
+    margin-left: 8%;
+  }
+}
+
 @media only screen and (max-device-width: 480px) {
   html {
     width: 100%;
@@ -411,7 +425,7 @@ article .content .rating {
     width: auto;
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 100px;
+    padding-top: 110px;
   }
 
   table {
@@ -470,3 +484,9 @@ article .content .rating {
     font-size: 14px;
   }
 }
+
+a {
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+}
+
