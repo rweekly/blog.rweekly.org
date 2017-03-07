@@ -5,13 +5,13 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
- <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}{{ site.baseurl }}/"/>
+ <title>{{ site.name }}</title>
+ <link href="https://blog.rweekly.org/atom.xml" rel="self"/>
+ <link href="https://blog.rweekly.org/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>https://blog.rweekly.org/</id>
  <author>
-   <name>R Weekly</name>
+   <name>R Weekly Blog</name>
    <email>mail@rweekly.org</email>
  </author>
 
@@ -20,8 +20,9 @@ layout: null
    <title>{{ post.title | xml_escape }}</title>
    <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
+   <id>https://blog.rweekly.org{{ post.id }}</id>
    <content type="html">
+   &lt;p&gt;Hello and welcome to this new issue!&lt;/p&gt;
    {{ post.content | xml_escape }}
   &lt;img src=&quot;https://web.rweekly.org/js/index.php?idsite=13&amp;rec=1&quot; style=&quot;border:0&quot; alt=&quot;&quot; /&gt;
    </content>

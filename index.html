@@ -11,7 +11,7 @@ layout: index
   {% if post.content contains '<!-- more -->' %}
     {{ post.content | split:'<!-- more -->' | first }}
   {% else %}
-    {{ post.excerpt }}
+    {{ post.content }}
   {% endif %}
   </div>
   <footer><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date_to_string }}</time></footer>
