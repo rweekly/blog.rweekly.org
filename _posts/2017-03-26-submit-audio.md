@@ -3,7 +3,7 @@ layout: post
 title: Pitch Your R Packages and Posts on R Weekly Podcast
 ---
 
-Go to [R Weekly Submit](https://rweekly.org/submit) to submit texts or the link to recording file of your pitch.
+Go to [R Weekly Submit](https://rweekly.org/submit) to submit texts or the link to the recording file of your pitch.
 
 Plain texts are also Ok!
 
